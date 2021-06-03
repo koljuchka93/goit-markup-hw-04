@@ -91,6 +91,7 @@ body {
 .menu-link:focus {
   color: var(--font—btn-accent-color);
 }
+/* contacts */
 .contact-list {
   display: flex;
   align-items: center;
@@ -99,22 +100,12 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: var(--font-paragraph-color);
 }
-.mail-icon:hover,
-.mail-icon:focus {
-}
-
 .smartphone-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: var(--font-paragraph-color);
 }
-.smartphone-icon:hover,
-.smartphone-icon:focus {
-}
-
 .mail-link {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -122,6 +113,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--font-paragraph-color);
   margin-right: 50px;
+  fill: var(--font-paragraph-color);
+  display: flex;
+  align-items: center;
 }
 .mail-link:hover,
 .mail-link:focus {
@@ -138,6 +132,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--font-paragraph-color);
+  fill: var(--font-paragraph-color);
+  display: flex;
+  align-items: center;
 }
 .tel-link:hover,
 .tel-link:focus {
@@ -372,6 +369,13 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-left-container {
+  margin-right: 70px;
+}
 .footer-logo-div {
   margin-bottom: 20px;
 }
@@ -381,7 +385,6 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   color: var(--main-bcgrnd-color);
 }
 .logo-word {
@@ -396,4 +399,45 @@ body {
 .address {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* footer-social-icons */
+.footer-social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bcgrnd-color);
+  margin-bottom: 20px;
+}
+/* li */
+.footer-social-list {
+  display: flex;
+  width: 200px;
+  margin: 0 auto;
+}
+.footer-social-list-item-link:hover,
+.footer-social-list-item-link:focus {
+  background-color: var(--font—btn-accent-color);
+  fill: var(--font—btn-accent-color);
+}
+
+.footer-social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-position: center;
+  position: relative;
+}
+.social-icon {
+  position: absolute;
+  fill: var(--main-bcgrnd-color);
 }

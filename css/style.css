@@ -437,13 +437,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
 }
 /* ul */
 .icons-team-ulist {
   display: flex;
 }
 /* li */
-.icons-team-list-item :not(:last-child) {
+.icons-team-list-item:not(:last-child) {
   margin-right: 30px;
 }
 /* a */
@@ -467,9 +468,8 @@ body {
 }
 .icon-team-list-link:hover .group-team-icon,
 .icon-team-list-link:focus .group-team-icon {
-  fill: var(--accent-color);
+  fill: var(--font—btn-accent-color);
 }
-
 /* END SECTION FOUR - ICONS TEAM */
 
 /* FOOTER */

@@ -9,6 +9,7 @@
   --btn-click-on-color: #188ce8;
   --btn-portfolio-color: #f5f4fa;
   --team-bcrnd-color: #f5f4fa;
+  --social-icon-main-color: #afb1b8;
 }
 /* BASE RESET */
 h1,
@@ -361,6 +362,37 @@ body {
   text-align: center;
   color: var(--font-paragraph-color);
 }
+/* icons */
+/* li */
+.team-social-list {
+  display: flex;
+  width: 200px;
+  margin: 0 auto;
+}
+.team-social-list-item-link:hover,
+.team-social-list-item-link:focus {
+  background-color: var(--font—btn-accent-color);
+  /* fill: var(--main-bcgrnd-color); */
+}
+.team-social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.team-social-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-position: center;
+  position: relative;
+}
+.social-icon {
+  position: absolute;
+  fill: var(--social-icon-main-color);
+}
+
 /* END SECTION THREE - TEAM */
 
 /* FOOTER */
@@ -437,7 +469,7 @@ body {
   background-position: center;
   position: relative;
 }
-.social-icon {
+.footer-social-icon {
   position: absolute;
   fill: var(--main-bcgrnd-color);
 }

@@ -263,7 +263,7 @@ body {
   align-items: center;
   width: 270px;
   height: 120px;
-  background: var(--background-icon-color)
+  background: var(--background-icon-color);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -425,6 +425,53 @@ body {
 
 /* END SECTION THREE - TEAM */
 
+/* SECTION FOUR - ICONS TEAM */
+/* div */
+.icons-team-div {
+}
+/* h2 */
+.icons-title {
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/* ul */
+.icons-team-ulist {
+  display: flex;
+}
+/* li */
+.icons-team-list-item :not(:last-child) {
+  margin-right: 30px;
+}
+/* a */
+.icon-team-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  background-color: transparent;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.icon-team-list-link:hover,
+.icon-team-list-link:focus {
+  border: 1px solid var(--font—btn-accent-color);
+}
+.group-team-icon {
+  fill: var(--social-icon-main-color);
+}
+.icon-team-list-link:hover .group-team-icon,
+.icon-team-list-link:focus .group-team-icon {
+  fill: var(--accent-color);
+}
+
+/* END SECTION FOUR - ICONS TEAM */
+
 /* FOOTER */
 .footer {
   background-color: var(--main-and-footer-bcgrnd-color);
@@ -444,7 +491,7 @@ body {
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700px;
   font-size: 26px;
   line-height: 1.19;
   color: var(--main-bcgrnd-color);
@@ -462,7 +509,6 @@ body {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
-
 /* footer-social-icons */
 .footer-social-title {
   font-weight: 700;

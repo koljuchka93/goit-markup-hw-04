@@ -10,6 +10,9 @@
   --btn-portfolio-color: #f5f4fa;
   --team-bcrnd-color: #f5f4fa;
   --social-icon-main-color: #afb1b8;
+  --background-image-color: #c4c4c4;
+  --backgroung-image-overlay: rgba(47, 48, 58, 0.4);
+  --background-icon-color: #f5f4fa;
 }
 /* BASE RESET */
 h1,
@@ -156,9 +159,15 @@ body {
 
 /* SECTION ONE - HERO */
 .hero {
-  background-color: var(--main-and-footer-bcgrnd-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-color: var(--background-image-color);
+  background-image: linear-gradient(
+      var(--backgroung-image-overlay),
+      var(--backgroung-image-overlay)
+    ),
+    url(../images/background-image.jpg);
+  background-size: cover;
 }
 .hero-container {
   display: flex;
@@ -240,12 +249,28 @@ body {
 .our-work-list {
   display: flex;
 }
+/* li */
 .our-work-list-item {
   width: 270px;
 }
 .our-work-list-item:not(:first-child) {
   margin-left: 30px;
 }
+/* icons */
+.our-work-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background: var(--background-icon-color)
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.our-work-icon {
+  height: 70px;
+}
+/* end icons */
 .our-work-list-item-h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -361,6 +386,7 @@ body {
   line-height: 1.88;
   text-align: center;
   color: var(--font-paragraph-color);
+  margin-bottom: 16px;
 }
 /* icons */
 /* li */
@@ -369,10 +395,14 @@ body {
   width: 200px;
   margin: 0 auto;
 }
+/* dinamic icon */
 .team-social-list-item-link:hover,
 .team-social-list-item-link:focus {
   background-color: var(--font—btn-accent-color);
-  /* fill: var(--main-bcgrnd-color); */
+}
+.team-social-list-item-link:hover .social-icon,
+.team-social-list-item-link:focus .social-icon {
+  fill: var(--main-bcgrnd-color);
 }
 .team-social-list-item:not(:last-child) {
   margin-right: 10px;

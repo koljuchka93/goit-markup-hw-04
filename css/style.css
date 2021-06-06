@@ -331,11 +331,7 @@ body {
   margin-right: 30px;
   margin-top: 30px;
 }
-.img-gallery-item:hover,
-.img-gallery-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .img-gallery-item-h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -351,6 +347,11 @@ body {
   font-size: 16px;
   line-height: 1.875;
   color: var(--font-paragraph-color);
+}
+.img-gallery-item:hover,
+.img-gallery-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* END PORTFOLIO SECTION TWO - IMAGES GALLERY */
 
